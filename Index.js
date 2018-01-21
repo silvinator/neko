@@ -17,7 +17,7 @@ function play(connection, message) {
     });
 }
 var hilfe = {
-    "!play"
+    "!play",
     "!ask"
     };
 var eightBall = [
