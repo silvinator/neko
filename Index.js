@@ -45,6 +45,7 @@ var servers = {};
 
 bot.on("ready", function() {
     console.log("Ready");
+    bot.user.setGame('Nya Nya!',
 });
 
 bot.on("message", function(message) {
