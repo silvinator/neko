@@ -81,9 +81,9 @@ bot.on("message", function(message) {
         case "notice":
             message.channel.sendMessage(message.author.toString() + " You've got pinged!");
             break;
-         case "hilfe":
-           message.channel.sendMessage(Hilfe)};
-           break;  
+        case "hilfe":
+            message.channel.sendMessage(Hilfe);
+            break;  
          
         case "play":
             if (!args[1]) {
