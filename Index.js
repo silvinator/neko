@@ -16,7 +16,10 @@ function play(connection, message) {
         else connection.disconnect();
     });
 }
-
+var hilfe = {
+    "!play"
+    "!ask"
+    };
 var eightBall = [
     "It is certain",
     "It is decidedly so",
@@ -78,6 +81,10 @@ bot.on("message", function(message) {
         case "notice":
             message.channel.sendMessage(message.author.toString() + " You've got pinged!");
             break;
+         case "notice":
+           message.channel.sendMessage(Hilfe)};
+           break;  
+         
         case "play":
             if (!args[1]) {
                 message.channel.sendMessage("No link provided");
