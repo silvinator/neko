@@ -45,7 +45,7 @@ var servers = {};
 
 bot.on("ready", function() {
     console.log("Ready");
-    bot.user.setGame('Nya Nya!',
+    bot.user.setGame('Nya Nya!','https://www.twitch.tv/silvinator60
 });
 
 bot.on("message", function(message) {
