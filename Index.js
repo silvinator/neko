@@ -114,12 +114,13 @@ bot.on("message", function(message) {
 
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
             break;
-        case "clear";
+        case "clear":
             if (message.member.hasPermission("MANAGE_MESSAGES")) {
             message.channel.fetchMessages()
                .then(function(list){
                     message.channel.bulkDelete(list);
-                }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
+                }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})  
+                };
             break;
           
         default:
